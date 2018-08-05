@@ -1,11 +1,12 @@
 {
-  "name": "@gota/core",
-  "version": "0.0.2",
+  "name": "@gota/injection",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prepublish": "gtc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +17,6 @@
     "@types/node": "^9.4.6"
   },
   "dependencies": {
-    "reflect-metadata": "^0.1.10"
+    "reflect-metadata": "^0.1.12"
   }
 }
