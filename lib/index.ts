@@ -109,6 +109,7 @@ export function Autowired(target : any, property : string) {
             bean.collectionName = modelType.name.replace(/[A-Z]/g, (match, offset, string) => {
                 return (offset ? '_' : '') + match.toLowerCase();
             });
+			bean.clazz = modelType;
         }
         BeanContext.setBean(beanName, bean);
     }
